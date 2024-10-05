@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
             SuspendLayout();
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(360, 112);
+            checkBox1.Location = new Point(566, 345);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(83, 19);
             checkBox1.TabIndex = 0;
@@ -42,11 +43,22 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(458, 345);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(83, 19);
+            checkBox2.TabIndex = 1;
+            checkBox2.Text = "checkBox2";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox2);
             Controls.Add(checkBox1);
             Name = "Form1";
             Text = "Form1";
@@ -57,5 +69,6 @@
         #endregion
 
         private CheckBox checkBox1;
+        private CheckBox checkBox2;
     }
 }
